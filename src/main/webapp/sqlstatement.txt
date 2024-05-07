@@ -1,0 +1,15 @@
+CREATE TABLE userDB ( "uid" varchar(20) primary key, "fname" varchar(30) not null, "email" varchar(20) unique, "pass" varchar(20) not null, "n_cart" number)
+CREATE TABLE purchase ( "uid" varchar(20) not null, "pid" varchar(20) not null, "fname" varchar(30), "address" varchar(50) not null, "phone_no" number, "pin" number, "price" number)
+select * from purchase
+CREATE TABLE product ( "pid" varchar(20) primary key, "pname" varchar(100), "price" number, "imadd" varhar2(500))
+select * from product
+
+
+select * from product
+create table cart("cid" varchar2(10) primary key, "uid" varchar2(10) not null, "pid" varchar2(10) not null, "pname" varchar(100), "price" number, "imadd" varchar2(500))
+select * from cart
+select * from userDB
+drop table cart
+update userDB set "n_cart"='0' where "uid"='jojo'
+
+insert into product values('p01', 'Men clothing', '1499', 'https://m.media-amazon.com/images/I/71UVaLfkcXL._AC_UL480_FMwebp_QL65_.jpg')
